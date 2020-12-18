@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplayer Fruit Party</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="microbit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="/dist/pluralize.js"></script>
+</head>
+
+<body>
+    <div>
+        <button onclick="pair()" id="pair-btn">Pair Microbit</button>
+    </div>
+
+    <p>Load this <a href="hex/microbit.hex">hex file</a> onto your Microbit first</p>
+
+    <div id="myCanvas"></div>
+
+    <p id="partyCount"></p>
+    
+    <p>
+        Demo built with <a href="https://github.com/jbakse/p5.party" target="_blank">p5.party</a>
+    </p>
+    <script src="index.js"></script>
+    <script src="/dist/p5.party.js"></script>
+</body>
+
+</html>
