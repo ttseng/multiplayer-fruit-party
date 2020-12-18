@@ -77,6 +77,18 @@ function draw() {
 
 }
 
+function keyPressed(){
+    if(keyCode == LEFT_ARROW){
+        me.x -= 5;
+    }else if(keyCode == RIGHT_ARROW){
+        me.x += 5;
+    }else if(keyCode == UP_ARROW){
+        me.y -= 5;
+    }else if(keyCode == DOWN_ARROW){
+        me.y +=5;
+    }
+}
+
 function loadSpriteImage(imageName) {
     let imgPath = `sprites/${imageName}.png`;
     partySprites[imageName] = loadImage(imgPath);
